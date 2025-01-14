@@ -24,58 +24,71 @@
         </nav>
       </aside>
     </div>
-    <div class="container">    
-      <header class="header">Header</header>
-      <div class="sectionContainer">
-        <section class="sectionContainer__hero">
+   
+  <header class="header">
+    <img src="./assets/images/logo.svg" alt="logo" class="logo">
+  </header>
+  <main class="container">    
+    <div class="sectionContainer">
+      <section class="sectionContainer__hero">
+        <picture class="sectionContainer__hero__img">
+          <source srcset="./assets/images/image-web-3-desktop.jpg" media="(min-width: 768px)">
+          <source srcset="./assets/images/image-web-3-mobile.jpg" media="(max-width: 375px)">
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="A descriptive text" >
+        </picture>
+        <h1 class="sectionContainer__hero__title">The Bright Future of Web 3.0?</h1>
+        <p class="sectionContainer__hero__txt">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+          But is it really fulfilling its promise?</p>
+        <button class="sectionContainer__hero__btn">Read More</button>
+      </section>
+      <section class="sectionContainer__news">
+        <h2 class="sectionContainer__news__title">New</h2>
+        <div class="sectionContainer__news__articles">
+          <article class="sectionContainer__news__articles__article">
+            <h3 class="sectionContainer__news__articles__article__title heading-s">Hydrogen VS Electric Cars</h3>
+            <p class="sectionContainer__news__articles__article__txt">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <hr>
+          </article>          
+          <article class="sectionContainer__news__articles__article">
+            <h3 class="sectionContainer__news__articles__article__title heading-s">The Downsides of AI Artistry</h3>
+            <p class="sectionContainer__news__articles__article__txt">What are the possible adverse effects of on-demand AI image generation?</p>
+            <hr>
+          </article>          
+          <article class="sectionContainer__news__articles__article">
+            <h3 class="sectionContainer__news__articles__article__title heading-s">Is VC Funding Drying Up?</h3>
+            <p class="sectionContainer__news__articles__article__txt">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </article>          
+        </div>
+        
+      </section>
+      <section class="sectionContainer__articles">
+        <div class="article">
           <img src="" alt="">
-          <h1>Heading H1</h1>
-          <p>Paragraph</p>
-          <button>Read More</button>
-        </section>
-        <section class="sectionContainer__news">
-          <h2>New</h2>
-          <div>
-            <h3>news title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum harum natus, consectetur repellendus unde excepturi provident delectus, ab iusto commodi architecto, laudantium rerum eveniet tempora voluptatum distinctio deleniti deserunt debitis.</p>
-          </div>
-          <div>
-            <h3>news title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum harum natus, consectetur repellendus unde excepturi provident delectus, ab iusto commodi architecto, laudantium rerum eveniet tempora voluptatum distinctio deleniti deserunt debitis.</p>
-          </div>
-          <div>
-            <h3>news title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum harum natus, consectetur repellendus unde excepturi provident delectus, ab iusto commodi architecto, laudantium rerum eveniet tempora voluptatum distinctio deleniti deserunt debitis.</p>
-          </div>
-        </section>
-        <section class="sectionContainer__articles">
-          <div class="article">
-            <img src="" alt="">
-            <h2>01</h2>
-            <h3>title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quo numquam beatae quasi ut, vel aperiam hic sit itaque consequatur iure natus culpa laborum accusantium! Soluta accusamus ratione quis facere?</p>
-          </div>
-          <div class="article">
-            <img src="" alt="">
-            <h2>01</h2>
-            <h3>title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quo numquam beatae quasi ut, vel aperiam hic sit itaque consequatur iure natus culpa laborum accusantium! Soluta accusamus ratione quis facere?</p>
-          </div>
-          <div class="article">
-            <img src="" alt="">
-            <h2>01</h2>
-            <h3>title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quo numquam beatae quasi ut, vel aperiam hic sit itaque consequatur iure natus culpa laborum accusantium! Soluta accusamus ratione quis facere?</p>
-          </div>
-        </section>
-      </div>
-    </div> 
-  </div> 
+          <h2>01</h2>
+          <h3>title</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quo numquam beatae quasi ut, vel aperiam hic sit itaque consequatur iure natus culpa laborum accusantium! Soluta accusamus ratione quis facere?</p>
+        </div>
+        <div class="article">
+          <img src="" alt="">
+          <h2>01</h2>
+          <h3>title</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quo numquam beatae quasi ut, vel aperiam hic sit itaque consequatur iure natus culpa laborum accusantium! Soluta accusamus ratione quis facere?</p>
+        </div>
+        <div class="article">
+          <img src="" alt="">
+          <h2>01</h2>
+          <h3>title</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quo numquam beatae quasi ut, vel aperiam hic sit itaque consequatur iure natus culpa laborum accusantium! Soluta accusamus ratione quis facere?</p>
+        </div>
+      </section>
+    </div>
+  </main> 
   <footer class="attribution">
     Challenge by <a class="attribution__credit" href="https://www.frontendmentor.io?ref=challenge"
       target="_blank">Frontend Mentor</a>.
     Coded by <a class="attribution__credit" href="https://www.frontendmentor.io/profile/juliengDev">Julien Gilbert</a>.
-  </footer> 
+  </footer>
+</div> 
   <script type="module"  src="/src/main.ts"></script> 
 </body>
 </html>

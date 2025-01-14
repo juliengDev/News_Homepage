@@ -202,13 +202,11 @@ button {
 }
 
 .sectionContainer {
-  background-color: bisque;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 6.4rem;
   width: 100%;
   max-width: 37.5rem;
-  margin: 3.2rem 2.8rem 7.5rem;
 }
 @media only screen and (min-width: 48rem) {
   .sectionContainer {
@@ -243,6 +241,13 @@ button {
   left: 0;
   height: 100vh;
   z-index: 1000;
+}
+
+picture, img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 :root {
@@ -352,10 +357,11 @@ button {
 }
 
 .container {
-  padding-left: calc(var(--hamburger-margin) * 2 + var(--bar-width));
+  margin: 0 auto;
   min-height: 100vh;
   position: relative;
   transition: padding-left var(--animation-timing);
+  margin: 3.2rem 1.6rem 7.5rem;
 }
 
 .attribution {
@@ -370,6 +376,74 @@ button {
 }
 .attribution a {
   cursor: pointer;
+}
+
+.header {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  margin: 2.7rem 1.6rem;
+}
+
+.logo {
+  width: 4.5rem;
+  height: 2.8rem;
+}
+
+.sectionContainer__hero__img {
+  margin-bottom: 3.2rem;
+}
+.sectionContainer__hero__title {
+  max-width: 32rem;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 1.6rem;
+}
+.sectionContainer__hero__txt {
+  color: var(--gun-metal);
+  margin-bottom: 2.4rem;
+}
+.sectionContainer__hero__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: var(--light-vermillion);
+  color: var(--dark-space);
+  padding: 1.2rem 2.4rem;
+  line-height: 24px;
+  letter-spacing: 4.38px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+.sectionContainer__hero__btn:hover {
+  background-color: var(--yellow);
+  color: var(--almost-white);
+  cursor: pointer;
+}
+.sectionContainer__news {
+  background-color: var(--dark-space);
+  color: var(--almost-white);
+}
+.sectionContainer__news__title {
+  padding: 2.4rem 2.1rem 3.5rem;
+  color: var(--yellow);
+}
+.sectionContainer__news__articles {
+  padding: 0 2rem 2.4rem 2.1rem;
+}
+.sectionContainer__news__articles__article__title {
+  margin-bottom: 0.8rem;
+}
+.sectionContainer__news__articles__article__txt {
+  margin-bottom: 2.9rem;
+  color: var(--silver);
+}
+.sectionContainer__news__articles__article hr {
+  border: 0.1rem solid #5E607A;
+  margin-bottom: 3.1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

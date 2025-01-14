@@ -76,13 +76,12 @@ button {
   align-items: center;
 }
 .sectionContainer {
-  background-color: bisque;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 6.4rem; 
   width: 100%;
   max-width: 37.5rem;  
-  margin: 3.2rem 2.8rem 7.5rem;
+  
 
   @include respond(tab-port) {
     max-width: 111rem;
@@ -117,6 +116,14 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100vh; 
   z-index: 1000;
+}
+
+
+picture, img {
+  display: block;        
+  max-width: 100%;      
+  height: auto;         
+  margin: 0 auto;       
 }

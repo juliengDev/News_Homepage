@@ -29,10 +29,10 @@
 
 }
 
-.hamburger-menu:has(input:checked) {
-  // background-color: var(--background);
-  // color: var(--background);
-}
+// .hamburger-menu:has(input:checked) {
+//   background-color: var(--background);
+//   color: var(--background);
+// }
 
 .hamburger-menu:has(input:focus-visible)::before,
 .hamburger-menu:has(input:focus-visible)::after,
@@ -121,8 +121,10 @@
 }
 
 .container {
-  padding-left: calc(var(--hamburger-margin) * 2 + var(--bar-width));
+  // padding-left: calc(var(--hamburger-margin) * 2 + var(--bar-width));
+  margin: 0 auto;
   min-height: 100vh;
   position: relative;
   transition: padding-left var(--animation-timing);
+  margin: 3.2rem 1.6rem 7.5rem;
 }
