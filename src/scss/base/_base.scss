@@ -1,10 +1,12 @@
 :root {
-  --grey-900: #2A4144;
-  --grey-500: #86A2A5;   
-  --pure-white: #ffffff;
-  --green-600 : #0C7D69;
-  --green-200: #E0F1E8;
-  --red: #D73C3C;
+  --almost-white: #FFFDFA;
+  --dark-space: #00001A;
+  --gun-metal: #5E607A;
+  --light-vermillion: #F15D51;
+  --silver :#C5C6CE;
+  --yellow: #E9AA52;
+
+  
 }
 
 * {
@@ -32,11 +34,14 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  text-decoration: none;
+  list-style: none;
   color: inherit;
-  cursor: auto; /* or pointer if you want to keep the default hand cursor */
+  cursor: pointer; /* or pointer if you want to keep the default hand cursor */
 }
 
+li{
+  list-style: none;
+}
 /*
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128

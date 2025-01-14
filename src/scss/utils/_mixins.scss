@@ -32,7 +32,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
  
   @if $breakpoint == tab-port {
-    @media only screen and (min-width: 48rem) and (max-width: 90rem){
+    @media only screen and (min-width: 48rem) {
       @content;
     } //768
   }
