@@ -435,6 +435,13 @@ picture, img {
   line-height: 40px;
   margin-bottom: 1.6rem;
 }
+@media only screen and (min-width: 48rem) {
+  .sectionContainer__hero__title {
+    font-size: 5.6rem;
+    line-height: 56px;
+    font-weight: 800;
+  }
+}
 .sectionContainer__hero__txt {
   color: var(--gun-metal);
   margin-bottom: 2.4rem;
