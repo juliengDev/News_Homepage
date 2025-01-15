@@ -1,16 +1,48 @@
 .header {
-  width: max-content;
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin: 2.7rem 1.6rem;
+  margin: 2.7rem 0;
+  @include respond(tab-port) {
+    margin: 8.9rem 0 5.5rem;
+  }
 }
 .logo {
   width: 4.5rem;
   height: 2.8rem;
 }
 
-.sectionContainer {
+.desktop-nav {
+  display: none; 
+  @include respond(tab-port) {
+    display: block;
+  }
+  
+}
 
+.desktop-nav__list {
+  
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.desktop-nav__list a {
+  color: var(--gun-metal);
+  text-decoration: none;
+  transition: color var(--animation-timing);
+}
+
+.desktop-nav__list a:hover {
+  color: var(--yellow);
+}
+
+.main {
+  margin-bottom: 12.9rem;
+}
+.sectionContainer {
+ 
   &__hero {
     &__img {
       margin-bottom: 3.2rem;
@@ -57,6 +89,9 @@
     &__articles {
       padding : 0 2rem 2.4rem 2.1rem;
       &__article {
+        
+
+        
         &__title {
           margin-bottom: 0.8rem;
           
@@ -68,6 +103,45 @@
         & hr {
           border: 0.1rem solid  #5E607A;
           margin-bottom: 3.1rem;
+        }
+      }
+    }
+  }
+  &__articles {
+    display: flex;
+    flex-direction: column;    
+    gap: 3.2rem;
+    height: max-content;
+    @include respond(tab-port) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2.4rem;
+    }
+    
+    &__article {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2.4rem;
+
+      &__img   {
+        max-width: 100%;      
+        width: 10rem;
+        max-height: 127px;
+        height: auto;  
+      }
+      &__container {
+        & h2 {
+          color: var(--light-vermillion);
+          margin-bottom: 1.2rem;
+        }
+        & h3 {
+          margin-bottom: 0.9rem;
+        }
+        & p {
+          color: var(--gun-metal);
+          
         }
       }
     }

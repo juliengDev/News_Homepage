@@ -3,92 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="News homepage about Web 3.0, technology trends, and gaming">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/style.css">
-  
+  <link rel="stylesheet" href="./css/style.css">  
   <title>Julien Gilbert | News homepage</title>  
 </head>
 <body>
   <div class="page-wrapper">
-    <div class="navigation-wrapper">
-      <label for="menu" class="hamburger-menu">
-        <input type="checkbox" id="menu">        
-      </label>
-      <aside class="sidebar">
-        <nav class="sidebar__nav" aria-label="Sidebar navigation">
+
+  <div class="navigation-wrapper">
+    <label for="menu" class="hamburger-menu">
+      <span class="sr-only">Toggle menu</span>
+      <input type="checkbox" id="menu" aria-expanded="false" aria-controls="mobile-nav" aria-pressed="true" role="button">  
+    </label>
+    <aside class="sidebar" id="mobile-nav" aria-hidden="true">
+      <nav class="sidebar__nav" aria-label="Mobile navigation">
+        <ul> 
           <li><a href="#home" class="sidebar__link">Home</a></li>
           <li><a href="#new" class="sidebar__link">New</a></li>
           <li><a href="#popular" class="sidebar__link">Popular</a></li>
           <li><a href="#trending" class="sidebar__link">Trending</a></li>
           <li><a href="#categories" class="sidebar__link">Categories</a></li>
-        </nav>
-      </aside>
-    </div>
-   
+      </ul>
+      </nav>
+    </aside>
+  </div>
+
   <header class="header">
-    <img src="./assets/images/logo.svg" alt="logo" class="logo">
+    <a href="/" aria-label="Home">
+      <img src="./assets/images/logo.svg" alt="" class="logo"> 
+    </a>
+    <nav class="desktop-nav" aria-label="Desktop navigation">
+      <ul class="desktop-nav__list">
+        <li><a href="#home" aria-current="page">Home</a></li>
+        <li><a href="#new">New</a></li>
+        <li><a href="#popular">Popular</a></li>
+        <li><a href="#trending">Trending</a></li>
+        <li><a href="#categories">Categories</a></li>
+      </ul>
+    </nav>   
   </header>
-  <main class="container">    
+  
+  <main class="main">    
     <div class="sectionContainer">
-      <section class="sectionContainer__hero">
+      <section class="sectionContainer__hero" aria-labelledby="hero-title">
         <picture class="sectionContainer__hero__img">
           <source srcset="./assets/images/image-web-3-desktop.jpg" media="(min-width: 768px)">
           <source srcset="./assets/images/image-web-3-mobile.jpg" media="(max-width: 375px)">
-          <img src="./assets/images/image-web-3-mobile.jpg" alt="A descriptive text" >
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="Colorful abstract representation of Web 3.0" >
         </picture>
-        <h1 class="sectionContainer__hero__title">The Bright Future of Web 3.0?</h1>
+        <h1 id="hero-title" class="sectionContainer__hero__title">The Bright Future of Web 3.0?</h1>
         <p class="sectionContainer__hero__txt">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
           But is it really fulfilling its promise?</p>
-        <button class="sectionContainer__hero__btn">Read More</button>
+        <button class="sectionContainer__hero__btn" aria-label="Read more about Web 3.0">Read More</button>
       </section>
-      <section class="sectionContainer__news">
-        <h2 class="sectionContainer__news__title">New</h2>
+      <section class="sectionContainer__news" aria-labelledby="news-title">
+        <h2 id="news-title" class="sectionContainer__news__title">New</h2>
         <div class="sectionContainer__news__articles">
-          <article class="sectionContainer__news__articles__article">
-            <h3 class="sectionContainer__news__articles__article__title heading-s">Hydrogen VS Electric Cars</h3>
+          <article aria-labelledby="article-1" class="sectionContainer__news__articles__article">
+            <h3 id="article-1"  class="sectionContainer__news__articles__article__title heading-s">Hydrogen VS Electric Cars</h3>
             <p class="sectionContainer__news__articles__article__txt">Will hydrogen-fueled cars ever catch up to EVs?</p>
-            <hr>
+            <hr aria-hidden="true">
           </article>          
-          <article class="sectionContainer__news__articles__article">
-            <h3 class="sectionContainer__news__articles__article__title heading-s">The Downsides of AI Artistry</h3>
+          <article aria-labelledby="article-2" class="sectionContainer__news__articles__article">
+            <h3 id="article-2" class="sectionContainer__news__articles__article__title heading-s">The Downsides of AI Artistry</h3>
             <p class="sectionContainer__news__articles__article__txt">What are the possible adverse effects of on-demand AI image generation?</p>
-            <hr>
+            <hr aria-hidden="true">
           </article>          
-          <article class="sectionContainer__news__articles__article">
-            <h3 class="sectionContainer__news__articles__article__title heading-s">Is VC Funding Drying Up?</h3>
+          <article aria-labelledby="article-3" class="sectionContainer__news__articles__article">
+            <h3 id="article-3" class="sectionContainer__news__articles__article__title heading-s">Is VC Funding Drying Up?</h3>
             <p class="sectionContainer__news__articles__article__txt">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
           </article>          
         </div>
         
       </section>
-      <section class="sectionContainer__articles">
-        <div class="article">
-          <img src="" alt="">
-          <h2>01</h2>
-          <h3>title</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quo numquam beatae quasi ut, vel aperiam hic sit itaque consequatur iure natus culpa laborum accusantium! Soluta accusamus ratione quis facere?</p>
+      <section class="sectionContainer__articles" aria-label="Featured articles">
+        <div class="sectionContainer__articles__article">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="Reviving Retro PCs image" class="sectionContainer__articles__article__img">
+          <div class="sectionContainer__articles__article__container">
+            <h2 class="heading-m">01</h2>
+            <h3 class="heading-xs">Reviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
         </div>
-        <div class="article">
-          <img src="" alt="">
-          <h2>01</h2>
-          <h3>title</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quo numquam beatae quasi ut, vel aperiam hic sit itaque consequatur iure natus culpa laborum accusantium! Soluta accusamus ratione quis facere?</p>
+        <div class="sectionContainer__articles__article">
+          <img src="./assets/images/image-top-laptops.jpg" alt="Top 10 Laptops of 2022 image" class="sectionContainer__articles__article__img">
+          <div class="sectionContainer__articles__article__container">            
+              <h2 class="heading-m">02</h2>
+              <h3 class="heading-xs">Top 10 Laptops of 2022</h3>
+              <p>Our best picks for various needs and budgets.</p>            
+          </div>
         </div>
-        <div class="article">
-          <img src="" alt="">
-          <h2>01</h2>
-          <h3>title</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quo numquam beatae quasi ut, vel aperiam hic sit itaque consequatur iure natus culpa laborum accusantium! Soluta accusamus ratione quis facere?</p>
+        <div class="sectionContainer__articles__article">
+          <img src="./assets/images/image-gaming-growth.jpg" alt="The Growth of Gaming image" class="sectionContainer__articles__article__img">
+          <div class="sectionContainer__articles__article__container">            
+              <h2 class="heading-m">03</h2>
+              <h3 class="heading-xs">The Growth of Gaming</h3>
+              <p>How the pandemic has sparked fresh opportunities.</p>            
+          </div>
         </div>
       </section>
     </div>
   </main> 
+
   <footer class="attribution">
     Challenge by <a class="attribution__credit" href="https://www.frontendmentor.io?ref=challenge"
       target="_blank">Frontend Mentor</a>.
     Coded by <a class="attribution__credit" href="https://www.frontendmentor.io/profile/juliengDev">Julien Gilbert</a>.
   </footer>
-</div> 
+
+  </div> 
   <script type="module"  src="/src/main.ts"></script> 
 </body>
 </html>

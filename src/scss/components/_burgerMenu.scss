@@ -93,7 +93,7 @@
   background-color: var(--foreground);
   color: var(--background);
   opacity: 0;
-  &__nav {
+  &__nav ul {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
@@ -120,11 +120,11 @@
   padding-left: calc(10rem + var(--hamburger-margin));
 }
 
-.container {
-  // padding-left: calc(var(--hamburger-margin) * 2 + var(--bar-width));
-  margin: 0 auto;
-  min-height: 100vh;
-  position: relative;
-  transition: padding-left var(--animation-timing);
-  margin: 3.2rem 1.6rem 7.5rem;
-}
+// .container {
+//   padding-left: calc(var(--hamburger-margin) * 2 + var(--bar-width));
+//   margin: 0 auto;
+//   min-height: 100vh;
+//   position: relative;
+//   transition: padding-left var(--animation-timing);
+//   margin: 3.2rem 1.6rem 7.5rem;
+// }
