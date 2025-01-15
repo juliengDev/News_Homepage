@@ -11,6 +11,10 @@
 .logo {
   width: 4.5rem;
   height: 2.8rem;
+  @include respond(tab-port) {
+    width: 6.5rem;
+    height: 4rem;
+  }
 }
 
 .desktop-nav {
@@ -47,6 +51,16 @@
     &__img {
       margin-bottom: 3.2rem;
     }
+    &__container {
+      display: flex;
+      flex-direction: column;
+      
+      gap: 3rem;
+      @include respond(tab-port) {
+      flex-direction: row;
+       
+      }   
+    }
     &__title {
       max-width: 32rem;
       font-size: 4rem;
@@ -73,7 +87,7 @@
       transition: background-color 0.3s, color 0.3s;
 
       &:hover {
-        background-color: var(--yellow);
+        background-color: var(--dark-space);
         color: var(--almost-white);
         cursor: pointer;
       }
@@ -85,15 +99,25 @@
     &__title {
       padding: 2.4rem 2.1rem 3.5rem;
       color: var(--yellow);
+      @include respond(tab-port) {
+        padding:3.2rem 2.4rem 3.2rem;
+        font-size: 4rem;
+        font-weight: bold;
+      }
     }
     &__articles {
       padding : 0 2rem 2.4rem 2.1rem;
       &__article {
-        
 
-        
         &__title {
           margin-bottom: 0.8rem;
+          color: var(--almost-white);
+          transition: color 0.3s ease-in-out;
+          
+          &:hover {
+            cursor: pointer;
+            color: var(--yellow);
+          }
           
         }
         &__txt {

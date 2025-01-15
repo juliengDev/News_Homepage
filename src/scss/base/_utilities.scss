@@ -76,7 +76,7 @@ button {
 
   @include respond(tab-port) {
     max-width: 113rem;
-    grid-gap:5.4rem;
+    grid-gap:3rem;
     grid-template-columns: 1fr  1fr 1fr;
     grid-template-rows: 1fr auto; 
     // margin: 6.1rem 16.5rem 12.4rem;
