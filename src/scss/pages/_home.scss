@@ -58,16 +58,20 @@
       gap: 3rem;
       @include respond(tab-port) {
       flex-direction: row;
-       
+       &__txt {
+        max-width: 35rem;
+       }
       }   
     }
     &__title {
+      width: 100%;
       max-width: 32rem;
       font-size: 4rem;
       font-weight: 700;
       line-height: 40px;
       margin-bottom: 1.6rem;  
       @include respond (tab-port) {
+        max-width: 35rem;
         font-size: 5.6rem;
         line-height: 56px;
         font-weight: 800;

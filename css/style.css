@@ -427,8 +427,12 @@ picture, img {
   .sectionContainer__hero__container {
     flex-direction: row;
   }
+  .sectionContainer__hero__container__txt {
+    max-width: 35rem;
+  }
 }
 .sectionContainer__hero__title {
+  width: 100%;
   max-width: 32rem;
   font-size: 4rem;
   font-weight: 700;
@@ -437,6 +441,7 @@ picture, img {
 }
 @media only screen and (min-width: 48rem) {
   .sectionContainer__hero__title {
+    max-width: 35rem;
     font-size: 5.6rem;
     line-height: 56px;
     font-weight: 800;
