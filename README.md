@@ -1,94 +1,72 @@
-# Frontend Mentor - News homepage
+# News homepage Website
 
 ![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
 
-## Welcome! 👋
+## Overview
 
-Thanks for checking out this front-end coding challenge.
+The site is a **news homepage** focused on topics like Web 3.0, technology trends, and gaming. It features a clean, modern design with a focus on usability and responsiveness. 
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+#### Key Code Features:
+1. **Structure**: The site uses semantic HTML5 elements like `<header>`, `<main>`, `<section>`, `<footer>`, and `<nav>` to ensure proper document structure and better SEO.
+2. **Responsive Design**: The layout adapts to different screen sizes using media queries and responsive images via the `<picture>` element.
+3. **Accessibility**: ARIA roles and attributes (like `aria-expanded`, `aria-label`, and `aria-labelledby`) are used to improve accessibility for assistive technologies.
+4. **Navigation**: Both desktop and mobile navigation are included, with a separate sidebar menu for smaller screens.
 
-**To do this challenge, you need a good understanding of HTML and CSS, and basic JavaScript.**
+---
 
-## The challenge
+### Accessibility Features
 
-Your challenge is to build out this news website homepage and get it looking as close to the design as possible.
+Accessibility has been a priority throughout the site. Here are the key implementations:
+- **Semantic Elements**: Proper use of HTML5 elements ensures logical content organization.
+- **ARIA Attributes**:
+  - `aria-expanded` and `aria-hidden` to indicate the state of the mobile navigation menu.
+  - `aria-label` and `aria-labelledby` for descriptive labels on links, sections, and images.
+- **Screen Reader Support**:
+  - `sr-only` class hides visual elements but keeps them accessible to screen readers.
+  - Navigation links and buttons are descriptive and provide context for their actions.
+- **Keyboard Navigation**: The site is fully navigable via keyboard, with logical focus order and interactive elements like buttons and links.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+---
 
-Your users should be able to:
+### Handling Responsive Navigation with the Burger Menu
 
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+The responsive navigation is managed using a **burger menu** for mobile devices. Here’s how it works:
+1. **Checkbox Input**: A hidden `<input type="checkbox">` element toggles the menu's visibility.
+2. **ARIA States**: 
+   - `aria-expanded` dynamically updates to reflect whether the menu is open or closed.
+   - `aria-controls` links the toggle button to the corresponding navigation element for assistive technologies.
+3. **CSS Styling**:
+   - The sidebar (`<aside>`) is styled to be off-screen by default and slides into view when the checkbox is checked.
+   - Media queries ensure the desktop navigation (`<nav class="desktop-nav">`) is displayed instead of the burger menu on larger screens.
+4. **Progressive Enhancement**: The approach ensures that the menu is usable even if JavaScript is disabled.
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+This implementation ensures that the navigation is both **responsive** and **accessible** across a variety of devices and user needs.
 
-## Where to find everything
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Links
+Live Demo : [News homepage ](https://juliengdev-news-hompage.netlify.app/)
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+## My Process
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+### Built With
+- TypeScript for enhanced type safety
+- Semantic HTML5 markup
+- SCSS for advanced styling
+- Mobile-first workflow
+- ARIA attributes for accessibility
+- Real-time form validation
+- Toast notification system
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+### Useful Resources	
+	
+  - [	Create a responsiv Menu burger](https://www.youtube.com/watch?v=dAIVbLrAb_U) - How To Build An Animated Hamburger Menu With Only CSS
+  - [WAI-ARIA Practices](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility/WAI-ARIA_basics) -  Essential patterns for accessible web components.
+  - [W3C Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) - Provides guidelines and best practices for creating accessible web content.
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+## Author
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Website - [Julien Gilbert Portfolio](https://juliengdev.github.io/julien-gilbert-portfolio/)
+- Frontend Mentor - [@juliengDev](https://www.frontendmentor.io/profile/juliengDev)
+- LinkedIn - [Julien Gilbert](https://www.linkedin.com/in/julien-gilbert-reactjs/)
 
-## Building your project
-
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
-
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
-
-## Deploying your project
-
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
-
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
-
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
-
-## Create a custom `README.md`
-
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
-
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
-
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
-
-## Submitting your solution
-
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+Feel free to reach out if you have any questions or feedback about this project!
